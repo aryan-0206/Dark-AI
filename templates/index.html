@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark AI - Voice Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="logo-icon">●</span>
+                <h1>DARK AI</h1>
+            </div>
+            <div class="status-indicator">
+                <span id="status-dot"></span>
+                <span id="status-text">System Online</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="visualizer-container">
+                <div class="visualizer-ring"></div>
+                <div class="visualizer-ring"></div>
+                <div class="visualizer-ring"></div>
+                <div class="ai-orb" id="ai-orb">
+                    <div class="orb-inner"></div>
+                </div>
+            </div>
+
+            <div class="chat-container" id="chat-container">
+                <div class="welcome-msg">
+                    <h2>Welcome, Sir</h2>
+                    <p>How can I assist you today?</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="input-area">
+                <button class="mic-btn" id="mic-btn" title="Speak">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <div class="text-input-wrapper">
+                    <input type="text" id="user-input" placeholder="Type a command or speak..." autocomplete="off">
+                    <button id="send-btn" title="a"><i class="fas fa-paper-plane"></i></button>
+                    <button id="clear-btn" title="Clear Chat"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
