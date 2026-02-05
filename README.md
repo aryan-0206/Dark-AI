@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Dark AI - Voice Assistant (Fixed Version) README</title>
+ 
 </head>
 <body>
   <h1>🤖 Dark AI - Voice Assistant (Fixed Version)</h1>
